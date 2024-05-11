@@ -1,27 +1,26 @@
 import React, {MouseEventHandler} from 'react';
-import Button, { StyleProps, ActionProps } from './components/button-components/Button';
-
+import Button , {ActionProps, StyleProps } from './components/button-component/Button';
+// import Button, { StyleProps, ActionProps } from './components/practice-button-component/Button';
 
 
 function App() {
-  const onclickButtonHandler:MouseEventHandler = (e)=>{
-    console.log("Button Clicked")
-  }
+  // const onclickButtonHandler:MouseEventHandler = (e)=>{
+  //   console.log("Button Clicked")
+  // }
 
 
   const action:ActionProps = {
-    onclick : onclickButtonHandler
+    // onclick : onclickButtonHandler
+    type : "button"
   }
 
   const style: StyleProps = {
-    buttonSize: "lg",
-    boldText: true,
-    borderRadius : "10px"
+    size: "lg"
   }
 
   return (
     <>
-      <Button style={style} action={action} />
+      <Button id={"button-1"} classes={["bold_text_button"]} style={style} action={action} />
     </>
   )
 }

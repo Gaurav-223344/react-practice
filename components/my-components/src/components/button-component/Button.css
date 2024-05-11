@@ -1,0 +1,23 @@
+.sm-button {
+  width: 70px;
+  height: 25px;
+}
+
+.md-button {
+  width: 80px;
+  height: 30px;
+}
+
+.lg-button {
+  width: 100px;
+  height: 35px;
+}
+
+.xl-button {
+  width: 120px;
+  height: 40px;
+}
+
+.bold_text_button {
+  font-weight: bold;
+}
